@@ -53,3 +53,51 @@ The API exposes a `/categorise` endpoint that accepts:
 
 ```json
 { "description": "Tesco £12.50" }
+```
+
+```json
+{
+  "category": "Groceries",
+  "confidence": 0.92,
+  "all_confidences": { ... }
+}
+```
+
+### **3. Frontend (Streamlit)**
+The UI provides:
+- A real‑time prediction interface  
+- Batch CSV upload  
+- Interactive charts  
+- Prediction history  
+
+---
+
+## 🧪 Running the Project
+
+### **1. Train the model**
+```bash
+python train_model.py
+```
+
+### **2. Start the API**
+```bash
+uvicorn api.app:app --reload
+```
+
+### **3. Launch the UI**
+```bash
+streamlit run ui/app.py
+```
+
+📦 Requirements
+- Python 3.9+
+- scikit‑learn
+- pandas
+- FastAPI
+- Uvicorn
+- Streamlit
+- joblib
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
