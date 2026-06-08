@@ -13,11 +13,17 @@ Enter a transaction description and instantly receive:
 - Confidence score  
 - Full probability breakdown  
 
+<img width="1115" height="1000" alt="image" src="https://github.com/user-attachments/assets/aab14dd3-2923-482d-8ada-65a0d9eb0a5a" />
+
+
 ### **Batch CSV processing**
 Upload a CSV file and get:
 - Category predictions for each row  
 - Confidence scores  
 - A category distribution chart  
+
+<img width="894" height="1237" alt="image" src="https://github.com/user-attachments/assets/3097d26e-96e6-4ec3-b86a-55c6af79c4c0" />
+
 
 ### **Interactive visualisations**
 The UI includes:
@@ -54,7 +60,7 @@ The API exposes a `/categorise` endpoint that accepts:
 ```json
 { "description": "Tesco £12.50" }
 ```
-
+and outputs:
 ```json
 {
   "category": "Groceries",
